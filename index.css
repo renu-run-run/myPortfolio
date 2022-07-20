@@ -1,0 +1,269 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Ubuntu&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:  'Chakra petch';
+} 
+
+.nav{
+ text-align: center;  
+ color: rgb(56, 34, 66);
+}
+.nav-bar{
+    width:100%;
+    height: 10vh;
+
+    background-color: #ffffff;
+    box-shadow: 5px 0px 5px  rgb(174, 174, 174);
+}
+.H1{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bolder;
+}
+.p1{
+    text-align: center;
+}
+.contact{
+    margin-left: 40%;
+}
+.about{
+    display: flex;
+    /* width: 100%; */
+    height: 100vh;
+    align-items: center;
+    /* margin-top: 20px;
+    padding: 10px;
+    margin-left: 50px; */
+    justify-content: center;
+    /* background-color: rgb(211, 211, 211); */
+    /* background-image:url("3dbg.jpg");
+    background-size: auto; */
+}
+.aboutimg{
+    height: 500px;
+    width: 500px;
+}
+.left{
+    float: left;
+    width: 50%;
+    margin-top: -50px;
+    margin-left: 10%;
+}
+.left h1{
+
+    font-size: 50px;
+    /* color: rgb(82, 110, 249); */
+    color: rgb(62, 54, 62);
+    font-weight: 500;
+}
+.wraper{
+    display: inline-flex;
+}
+.fixed-txt{
+     color: rgb(65, 70, 78);
+     font-size: 60px;
+     font-weight: 400;
+}
+.moving-text{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.moving-text li{
+    color: rgb(166, 176, 20);
+    list-style: none;
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    top:0;
+    animation: move 6s steps(4) infinite;
+}
+ @keyframes move{
+     100% {
+         top: -360px;
+         
+     }
+ }
+ 
+ .moving-text li span:after{
+     content: '';
+     position: absolute;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background-color: rgb(255, 255, 255);
+     border-left: 2px solid rgb(38, 38, 38);
+     animation: type 1.5s steps(10) infinite;
+ }
+ @keyframes type{
+     100%{
+         left: 70%;
+         margin: 0 -35px 0 35px; 
+     }
+ }
+.right{
+    float: right;
+    width: 40%;
+}
+.skill{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+.skill-right{
+    width: 50%;
+    float: right;
+    margin-top: 100px;
+    text-transform: uppercase;
+    margin-right: 100px;
+}
+.skill-right h1{
+    color: #503356;
+}
+.skill-right ul{
+    margin: 10px 0;
+    padding: 8px;
+}
+.bar{
+    background: #273944;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(.25,0.8,.25,1);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(254, 71, 208, 0.25), 0 10px 10px rgba(91, 37, 99, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgb(182, 112, 207)0%,rgb(229, 209, 97)100%);
+}
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+.css{
+    width: 80%;
+    animation: css 3s;
+}
+.javascript{
+    width: 70%;
+    animation: javascript 3s;
+}
+.react{
+    width: 60%;
+    animation: react 3s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes react{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+.react{
+    width: 60%;
+    animation: react 3s;
+}
+.skill-img{
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+}
+.skill h3{
+    margin: 5px;
+}
+table{
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+a{
+    margin-left: 10px;
+}
+.card-gap{
+    margin: 10px;
+}
+
+.card-container{
+    width: 300px;
+    overflow: hidden;
+    /* box-shadow: 0px 0px 15px -5px; */
+}
+
+.card-container:hover{
+    transform: scale(1.1);
+    box-shadow:0px 0px 15px -5px;
+    transition: 0.5s;
+    animation: ease-in-out;
+}
+.image-container img{
+    overflow: hidden;
+    height: 200px;
+}
+.card-content{
+    margin: 1rem;
+    margin-top: 0.5rem;
+
+
+}
+h3,p{
+    margin: 0;
+    padding: 0;
+}
+.card-title{
+    margin-bottom: 0.5rem;
+}
+.card-body{
+    text-align: justify;
+}
+.Button{
+    padding: 10px;
+    color: #fdfdfd;
+    background-color: #a967b2;
+    font-weight: bold;
+    border-radius: 10%;
+    margin-left: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Button:hover {
+    /* background-color: #04AA6D; */
+    background-color: white;
+    color:  #a967b2;
+  }
