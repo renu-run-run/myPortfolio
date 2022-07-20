@@ -26,9 +26,7 @@
 .p1{
     text-align: center;
 }
-.contact{
-    margin-left: 40%;
-}
+
 .about{
     display: flex;
     /* width: 100%; */
@@ -266,4 +264,13 @@ h3,p{
     /* background-color: #04AA6D; */
     background-color: white;
     color:  #a967b2;
+  }
+  .contact{
+    margin-left: 42%;
+}
+  .footer{
+    margin-left: 44%;
+  }
+  .footerh5{
+    margin-left: 6%;
   }

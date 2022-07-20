@@ -11,6 +11,11 @@ const Contact =() =>{
         
         <br/>
         <br/>
+        <div className="footer">
+        <h3>Renuka Choudhary</h3>
+           <p className="footerh5">(India)</p>
+        </div>
+        
         <br />
         </div>
     )
